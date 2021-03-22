@@ -1,0 +1,134 @@
+html{
+	position:relative;
+}
+#stopka{
+	font-size:10px;
+	background-color:#12232E;
+	color: white;
+	width:100%;
+	text-align:center;
+	margin:0;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+#nawigacja li{
+	list-style-type:none;
+	float:left;
+	padding: 0 10px;
+	bottom:10px;
+}
+#nawigacja a{
+	text-decoration:none;
+	color:white;
+	font-size:35px;
+	display:block;
+	background:linear-gradient(#12232E,#203647);
+	font-weight:bold;
+	line-height:50px;
+	font-family:impact;
+	text-transform:uppercase;
+	transition: color 0.25s;
+}
+#nawigacja a:hover{
+	color:LightSlateGrey;
+}
+#nawigacja a:active{
+	color:black;
+}
+#tlo{
+	width:100%;
+	height:50px;
+	background:linear-gradient(#12232E,#203647);
+	margin:0;
+	padding:0;
+	top:0;
+	left:0;
+	position:fixed;
+	z-index:10;
+}
+#nawigacja ul{
+	position:fixed;
+	z-index:11;
+	right:0%;
+	top:0;
+	margin:0;
+}
+#tresc{
+ margin-top:75px;
+ color:white;
+ font-family:helvetica;
+}
+#tresc h1{
+	background: linear-gradient(to left, #ff0271,#fff400);
+	-webkit-background-clip: text;
+	color:transparent;
+	display:inline;
+	font-size:70px;
+	font-variant:small-caps;
+	border-bottom: 10px dashed black;
+}
+#tresc h2{
+	font-size:35px;
+	
+}
+#tresc h3{
+	font-size:40px;
+}
+.cena{
+	font-size:55px;
+	color:red;
+}
+.nauczysz{
+	font-size:25px;
+}
+#nazwa{
+	position:fixed;
+	top:0;
+	margin:0;
+	left:0;
+	font-size:35px;
+	font-family:brush script mt;
+	text-shadow:1px 2px #DCDCDC;
+	color:#b80f0a;
+	z-index:11;
+}
+body{
+	background-color:#556571;
+}
+.nauczysz li{
+	list-style-type:none;
+}
+.nauczysz li::before{
+	content:"-";
+}
+.stara{
+	font-size:30px;
+	position:relative;
+	bottom:40px;
+	right:230px;
+	color:white;
+	text-decoration:line-through;
+	text-decoration-color:red;
+}
+.wiecej{
+	font-size:50px;
+	text-decoration:none;
+	color:blue;
+	transition: margin 1.5s, color 0.25s;
+}
+.wiecej:active{
+	color:cornflowerblue;
+}
+.wiecej::before{
+	content:"";
+	width:0;
+	transition:1.5s;
+	display:inline-block;
+}
+.wiecej:hover{
+	text-decoration:underline;
+}
+.wiecej:hover::before{
+	width:10%;
+}

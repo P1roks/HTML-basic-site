@@ -1,0 +1,134 @@
+html{
+	position:relative;
+}
+#stopka{
+	font-size:10px;
+	background-color:#12232E;
+	color: white;
+	width:100%;
+	text-align:center;
+	margin:0;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+#nawigacja{
+	position:fixed;
+	z-index:10;
+}
+#nawigacja li{
+	list-style-type:none;
+	float:left;
+	padding: 0 10px;
+	bottom:10px;
+}
+#nawigacja a{
+	text-decoration:none;
+	color:white;
+	font-size:35px;
+	display:block;
+	background:linear-gradient(#12232E,#203647);
+	font-weight:bold;
+	line-height:50px;
+	font-family:impact;
+	text-transform:uppercase;
+	transition: color 0.25s;
+}
+#nawigacja a:hover{
+	color:LightSlateGrey;
+}
+#nawigacja a:active{
+	color:black;
+}
+#tlo{
+	width:100%;
+	height:50px;
+	background:linear-gradient(#12232E,#203647);
+	margin:0;
+	padding:0;
+	top:0;
+	left:0;
+	position:fixed;
+	z-index:9;
+}
+#nawigacja ul{
+	position:fixed;
+	right:0%;
+	top:0;
+	margin:0;
+}
+#tresc{
+	text-align:center;
+	margin-top:75px;
+	font-size:40px;
+}
+#nazwa{
+	position:fixed;
+	top:0;
+	margin:0;
+	left:0;
+	font-size:35px;
+	font-family:brush script mt;
+	text-shadow:1px 2px #DCDCDC;
+	color:#b80f0a;
+	z-index:10;
+}
+body{
+	background-color:#556571;
+}
+.logo{
+	font-size:50px;
+	font-weight:bold;
+	text-transform:uppercase;
+	font-family:Arial;
+	margin: auto;
+	width:800px;
+	text-align:center;
+	border-radius:100px;
+	color:white;
+}
+figure{
+	position:relative;
+	float:left;
+}
+figcaption{
+	display:none;
+	border: 3px outset transparent;
+	border-image:linear-gradient(lime 20%,yellow) 30;
+	font-size:20px;
+	background-color:darkred;
+	color:white;
+	padding:5px;
+	top:40px;
+	left:50%;
+	position:absolute;
+	width:100%;
+	z-index:1;
+	font-family:arial;
+}
+figure:hover figcaption{
+	display:block;
+}
+.gify{
+	padding: 80px 32px 80px 80px;
+	position:relative;
+	transition: transform 2s;
+
+}
+.gify:hover{
+	transform:scale(1.3);
+}
+.strony li{
+	list-style-type:none;
+	float:left;
+	padding:80px;
+ }
+.duze{
+	display:none;
+	position:absolute;
+	border:5px solid #4b1313;
+	bottom:40px;
+}
+.strony img:hover ~ .duze{
+	display:block;
+}

@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Kontakt</title>
+<link rel="stylesheet" type="text/css" href="kontakt.css">
+<link rel="icon" href="html.ico">
+</head>
+<body>
+<div id="tlo"> </div>
+<div id="nazwa">&nbsp HTML</div>
+	<nav id="nawigacja">
+	<ul>
+	<li><a href="index.html"> Strona Główna </a></li>
+	<li><a href="galeria.html"> Galeria </a></li>
+	<li><a href="kontakt.html"> Kontakt </a></li>
+	<li><a href="oferta.html"> Oferta </a></li>
+	</ul>
+	</nav>
+	
+<div id="tresc">
+ <form method="post" action="mailto:aaaa@gmail.com">
+	<fieldset id="twoje">
+		<legend><h1>Twoje dane:</h1></legend>
+			<label for="Pimie">Imię: <span class="gw">*</span></label>
+				<input type="text" name="Pimie" placeholder="Jan"><br/>
+			<label for="naz">Nazwisko: <span class="gw">*</span></label>
+				<input type="text" name="naz" placeholder="Kowalski"><br/>
+			<label for="mail">E-mail: <span class="gw">*</span></label>
+				<input type="email" name="mail" placeholder="Jan.Kowalski@gmail.com"><br/>
+			<label for="nr">Numer Telefonu:</label>
+				<input type="tel" name="nr" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"><br/>
+			<label for="data">Data urodzenia:</label>
+				<input type="date" name="data"><br/>
+			<label for="plec">Płeć: <span class="gw">*</span></label><br/>
+				<label for="M" class="plec">Mężczyzna</label>
+				<input type="radio" name="plec" value="M"><br/>
+				<label for="K" class="plec">Kobieta</label>
+				<input type="radio" name="plec" value="K"><br/>
+			<p><span class="gw">* - wymagane pole </span></p>
+	</fieldset>
+	
+	<fieldset id="przyczyna">
+		<legend><h1>Kontakt</h1></legend>
+			<label for="problem">Przyczyna kontaktu: </label><br/>
+				<label for="usterka" class="problem">Usterka strony</label>
+					<input type="radio" name="problem" value="usterka"><br/>
+				<label for="blad" class="problem">Błędne informacje na stronie</label>
+					<input type="radio" name="problem" value="blad"><br/>
+				<label for="opiniia" class="problem">Chęć zostawienie opinii</label>
+					<input type="radio" name="problem" value="opiniia"><br/>
+				<label for="inne" class="problem">Inne</label>
+					<input type="radio" name="problem" value="Inne"><br/><br/>
+				<label for="opis">Opisz co się dzieje</label><br/>
+					<textarea name="opis" rows="7" cols="50" placeholder="opis"></textarea>
+	</fieldset>
+	
+	<fieldset id="ocena">
+		<legend><h1>Opinia</h1></legend>
+			<label for="wiele">Zaznacz wszystkie przymiotniki <br/>pasujące do tej strony</label>
+			
+				<div id="wieleo">
+				<input type="checkbox" name="przym" value="wys">
+				<label for="przym">Wyśmienita</label>
+				
+				<input type="checkbox" name="przym" value="dob">
+				<label for="przym"></label>Dobra<br/>
+				
+				<input type="checkbox" name="przym" value="amb">
+				<label for="przym">Ambitna</label>
+				
+				<input type="checkbox" name="przym" value="dosk">
+				<label for="przym">Doskonała</label><br/>
+				
+				<input type="checkbox" name="przym" value="przec">
+				<label for="przym">Przeciętna</label>
+				
+				<input type="checkbox" name="przym" value="Ok">
+				<label for="przym">Ok</label><br/>
+				</div>
+				
+			<label for="dos">Jak oceniasz swoje doświadczenie<br/> z tą strona?</label><br/>
+				<center>
+				<select name="dos" id="selekt">
+					<option value="swietnie"> Świetnie </option>
+					<option value="dobrze"> Dobrze </option>
+					<option value="przecietnie"> Przeciętnie </option>
+					<option value="zle"> Źle </option>
+					<option value="bzle"> Bardzo źle </option>
+				</select><br/>
+				</center>
+				
+			<label for="ocen">Oceń całą stronę (1-10)</label><br/>
+				<center><input type="range" name="ocen" min="1" max="10" id="zasieg"></center>
+	</fieldset>
+	<center><input type="submit" value="PRZEŚLIJ" id="przycisk"><input type="reset" value="RESETUJ" id="przycisk"></center>
+ </form>
+</div>	
+
+
+<div id="stopka">
+<footer>
+<p>Autor: Piotr Jakbczyk</p>
+</div>
+</footer>
+</body>
+</html>

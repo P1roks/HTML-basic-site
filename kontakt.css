@@ -1,0 +1,153 @@
+html{
+	min-height:100%;
+	position:relative;
+}
+#stopka{
+	font-size:10px;
+	background-color:#12232E;
+	color: white;
+	width:100%;
+	text-align:center;
+	margin:0;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+#nawigacja li{
+	list-style-type:none;
+	float:left;
+	padding: 0 10px;
+	bottom:10px;
+}
+#nawigacja a{
+	text-decoration:none;
+	color:white;
+	font-size:35px;
+	display:block;
+	background:linear-gradient(#12232E,#203647);
+	font-weight:bold;
+	line-height:50px;
+	font-family:impact;
+	text-transform:uppercase;
+	transition: color 0.25s;
+}
+#nawigacja a:hover{
+	color:LightSlateGrey;
+}
+#nawigacja a:active{
+	color:black;
+}
+#tlo{
+	width:100%;
+	height:50px;
+	background:linear-gradient(#12232E,#203647);
+	margin:0;
+	padding:0;
+	top:0;
+	left:0;
+	position:fixed;
+	z-index:10;
+}
+#nawigacja ul{
+	position:fixed;
+	z-index:1;
+	right:0%;
+	top:0;
+	margin:0;
+	z-index:11;
+}
+#tresc{
+ margin-top:75px;
+ text-align:center;
+ text-shadow: 1px 1px 2px black;
+}
+#nazwa{
+	position:fixed;
+	top:0;
+	margin:0;
+	left:0;
+	font-size:35px;
+	font-family:brush script mt;
+	text-shadow:1px 2px #DCDCDC;
+	color:#b80f0a;
+	z-index:11;
+}
+body{
+	background-color:#556571;
+}
+#twoje{
+	font-family:arial;
+	color:white;
+	font-size:40px;
+	display:inline-block;
+	border-image:linear-gradient(red,yellow) 30;
+	height:600px;
+}
+#twoje h1, #przyczyna h1, #ocena h1{
+	font-size:50px;
+}
+#twoje p{
+	font-size:20px;
+}
+.plec{
+	font-size:30px;
+	color:deeppink;
+}
+.gw{
+	color:silver;
+}
+#przyczyna{
+	font-family:arial;
+	color:white;
+	font-size:40px;
+	display:inline-block;
+	border-image:linear-gradient(lime,deeppink) 30;
+	height:600px;
+}
+#ocena{
+	font-family:arial;
+	color:white;
+	font-size:40px;
+	display:inline-block;
+	border-image:linear-gradient(DarkTurquoise,#ff6700) 30;
+	height:600px;
+}
+#innet{
+	display:none;
+}
+.problem{
+	font-size:30px;
+	color:deeppink;
+}
+#wieleo{
+	font-size:23px;
+	color:deeppink;
+}
+#zasieg{
+	width:100%;
+}
+#przycisk{
+	width:150px;
+	height:50px;
+	transition: color 0.25s, background 0.25s;
+	font-size:20px;
+	margin: 10px 70px;
+}
+#przycisk:hover{
+	color:pink;
+}
+#przycisk:active{
+	color:lime;
+	background:linear-gradient(white,silver);
+}
+#tresc input,textarea{
+	background:#262523;
+	color:deeppink;
+	font-size:18px;
+}
+#selekt{
+	width:100%;
+	font-size:20px;
+	background:#262523;
+	color:deeppink;
+}
